@@ -11,6 +11,12 @@
 
 static NSString * const Account = @"TAKUUIDStorage/Account";
 
+@interface TAKUUIDStorage ()
+
+@property (nonatomic) OSStatus lastErrorStatus;
+
+@end
+
 @implementation TAKUUIDStorage
 
 + (instancetype)sharedInstance {
@@ -23,17 +29,20 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
 }
 
 - (NSString *)findOrCreate {
+  self.lastErrorStatus = noErr;
   NSString *UUIDString = [self find];
   if (UUIDString) return UUIDString;
   return [self create];
 }
 
 - (BOOL)remove {
+  self.lastErrorStatus = noErr;
   OSStatus status = SecItemDelete((__bridge CFDictionaryRef)[self queryForRemove]);
-  return status == noErr;
+  return [self verifyStatusAndStoreLastError:status];
 }
 
 - (NSString *)renew {
+  self.lastErrorStatus = noErr;
   BOOL result = [self remove];
   if (result) return [self create];
   return nil;
@@ -72,17 +81,24 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
 - (NSString *)create {
   NSString *UUIDString = [[[NSUUID alloc] init] UUIDString];
   OSStatus status = SecItemAdd((__bridge CFDictionaryRef)[self queryForCreate:UUIDString], NULL);
-  if (status == noErr) return UUIDString;
+  if ([self verifyStatusAndStoreLastError:status]) return UUIDString;
   return nil;
 }
 
 - (NSString *)find {
   CFDataRef result;
   OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)[self queryForFind], (CFTypeRef *)&result);
-  if (status != noErr) return nil;
+  if (![self verifyStatusAndStoreLastError:status]) return nil;
   
   NSData *data = (__bridge_transfer NSData *)result;
   return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+- (BOOL)verifyStatusAndStoreLastError:(OSStatus)status {
+  BOOL isSuccess = (status == noErr);
+  if (isSuccess) return YES;
+  self.lastErrorStatus = status;
+  return NO;
 }
 
 @end
