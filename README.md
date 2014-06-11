@@ -42,3 +42,17 @@ remove UUID from Keychain.
 ```objectivec
 BOOL isSuccess = [[TAKUUIDStorage sharedInstance] remove];
 ```
+
+## last error
+
+get last error.
+
+```objectivec
+OSStatus status = [TAKUUIDStorage sharedInstance].lastErrorStatus;
+```
+
+- show error detail from code
+
+```console
+$ macerror CODE
+```
