@@ -1,0 +1,17 @@
+language: objective-c
+cache: 
+  directories:
+    - vendor/bundle
+    - Pods
+install:
+  - bundle install --path=vendor/bundle --binstubs=vendor/bin
+  - bundle exec pod install
+before_script:
+  - brew update && brew upgrade xctool && xctool --version
+xcode_workspace:  TAKUUID.xcworkspace
+xcode_scheme: TAKUUID
+xcode_sdk: iphonesimulator
+env:
+  - XCODE_SDK=iphonesimulator7.0
+  - XCODE_SDK=iphonesimulator7.1
+  - XCODE_SDK=iphonesimulator8.0
