@@ -15,3 +15,4 @@ env:
   - XCODE_SDK=iphonesimulator7.0
   - XCODE_SDK=iphonesimulator7.1
   - XCODE_SDK=iphonesimulator8.0
+  - XCODE_SDK=iphonesimulator8.1
