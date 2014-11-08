@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TAKUUID'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.license      = 'MIT'
   s.summary      = 'create UUID and store to Keychain library'
   s.homepage     = 'https://github.com/taka0125/TAKUUID'
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.ios.frameworks        = 'Security'
 
-  s.public_header_files = 'TAKUUID/*.h'
-  s.source_files = 'TAKUUID/*.{h,m}'
+  s.public_header_files = 'Classes/*.h'
+  s.source_files = 'Classes/*.{h,m}'
 end
