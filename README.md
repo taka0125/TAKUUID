@@ -5,8 +5,10 @@ Generate UUID and save to KeyChain.
 ## Build Status
 
 ### master
+[![Build Status](https://travis-ci.org/taka0125/TAKUUID.svg?branch=master)](https://travis-ci.org/taka0125/TAKUUID)
 
 ### develop
+[![Build Status](https://travis-ci.org/taka0125/TAKUUID.svg?branch=develop)](https://travis-ci.org/taka0125/TAKUUID)
 
 # How to use
 
