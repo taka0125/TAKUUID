@@ -48,6 +48,19 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return nil;
 }
 
+- (BOOL)updateAttrAccessible {
+  self.lastErrorStatus = noErr;
+
+  NSString *UUIDString = [self find];
+  if (!UUIDString) return NO;
+
+  BOOL result = [self remove];
+  if (!result) return NO;
+
+  OSStatus status = SecItemAdd((__bridge CFDictionaryRef)[self queryForCreate:UUIDString], NULL);
+  return [self verifyStatusAndStoreLastError:status];
+}
+
 #pragma mark - PrivateMethods
 
 - (NSDictionary *)queryForFind {
@@ -63,6 +76,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return @{
            (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
            (__bridge id)kSecAttrAccount: Account,
+	         (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleAfterFirstUnlock,
            (__bridge id)kSecValueData: [UUIDString dataUsingEncoding:NSUTF8StringEncoding],
            (__bridge id)kSecAttrDescription: @"",
            (__bridge id)kSecAttrService: [NSBundle mainBundle].bundleIdentifier,

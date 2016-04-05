@@ -21,4 +21,15 @@
   NSLog(@"lastErrorStatus = %d", (int)[TAKUUIDStorage sharedInstance].lastErrorStatus);
 }
 
+- (IBAction)updateAttrAccessible {
+  NSString *UUIDString = [[TAKUUIDStorage sharedInstance] findOrCreate];
+  NSLog(@"UUID = %@", UUIDString);
+  NSLog(@"lastErrorStatus = %d", (int)[TAKUUIDStorage sharedInstance].lastErrorStatus);
+  
+  [[TAKUUIDStorage sharedInstance] updateAttrAccessible];
+  
+  UUIDString = [[TAKUUIDStorage sharedInstance] findOrCreate];
+  NSLog(@"UUID = %@", UUIDString);
+}
+
 @end

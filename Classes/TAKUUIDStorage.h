@@ -18,5 +18,6 @@
 - (NSString *)findOrCreate;
 - (BOOL)remove;
 - (NSString *)renew;
+- (BOOL)updateAttrAccessible;
 
 @end
