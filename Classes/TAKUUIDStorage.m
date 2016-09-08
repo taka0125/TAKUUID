@@ -28,7 +28,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return _instance;
 }
 
-- (NSString *)findOrCreate {
+- (nullable NSString *)findOrCreate {
   self.lastErrorStatus = noErr;
   NSString *UUIDString = [self find];
   if (UUIDString) return UUIDString;
@@ -41,7 +41,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return [self verifyStatusAndStoreLastError:status];
 }
 
-- (NSString *)renew {
+- (nullable NSString *)renew {
   self.lastErrorStatus = noErr;
   BOOL result = [self remove];
   if (result) return [self create];
@@ -76,7 +76,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return @{
            (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
            (__bridge id)kSecAttrAccount: Account,
-	         (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleAfterFirstUnlock,
+           (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleAfterFirstUnlock,
            (__bridge id)kSecValueData: [UUIDString dataUsingEncoding:NSUTF8StringEncoding],
            (__bridge id)kSecAttrDescription: @"",
            (__bridge id)kSecAttrService: [NSBundle mainBundle].bundleIdentifier,
@@ -92,14 +92,14 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
            };
 }
 
-- (NSString *)create {
+- (nullable NSString *)create {
   NSString *UUIDString = [[[NSUUID alloc] init] UUIDString];
   OSStatus status = SecItemAdd((__bridge CFDictionaryRef)[self queryForCreate:UUIDString], NULL);
   if ([self verifyStatusAndStoreLastError:status]) return UUIDString;
   return nil;
 }
 
-- (NSString *)find {
+- (nullable NSString *)find {
   CFDataRef result;
   OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)[self queryForFind], (CFTypeRef *)&result);
   if (![self verifyStatusAndStoreLastError:status]) return nil;
