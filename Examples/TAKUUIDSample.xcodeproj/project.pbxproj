@@ -22,6 +22,7 @@
 		86FA3511192CDCFF0076278B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86FA350F192CDCFF0076278B /* InfoPlist.strings */; };
 		86FA3513192CDCFF0076278B /* TAKUUIDSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FA3512192CDCFF0076278B /* TAKUUIDSampleTests.m */; };
 		942B7E8DF7E87F5044A558DB /* libPods-TAKUUIDSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9914B383330A96894668CB53 /* libPods-TAKUUIDSample.a */; };
+		F8BFAB811D813BB200EC6624 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BFAB801D813BB200EC6624 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		86FA3510192CDCFF0076278B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86FA3512192CDCFF0076278B /* TAKUUIDSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAKUUIDSampleTests.m; sourceTree = "<group>"; };
 		9914B383330A96894668CB53 /* libPods-TAKUUIDSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUIDSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BFAB801D813BB200EC6624 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				86FA34FC192CDCFF0076278B /* TAKViewController.h */,
 				86FA34FD192CDCFF0076278B /* TAKViewController.m */,
 				86FA34FF192CDCFF0076278B /* Images.xcassets */,
+				F8BFAB801D813BB200EC6624 /* Launch Screen.storyboard */,
 				86FA34EE192CDCFF0076278B /* Supporting Files */,
 			);
 			path = TAKUUIDSample;
@@ -250,6 +253,7 @@
 			files = (
 				86FA3500192CDCFF0076278B /* Images.xcassets in Resources */,
 				86FA34F2192CDCFF0076278B /* InfoPlist.strings in Resources */,
+				F8BFAB811D813BB200EC6624 /* Launch Screen.storyboard in Resources */,
 				86FA34FB192CDCFF0076278B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +448,6 @@
 			baseConfigurationReference = 6BDA8C5915ED367786A5E6E5 /* Pods-TAKUUIDSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKUUIDSample/TAKUUIDSample-Prefix.pch";
 				INFOPLIST_FILE = "TAKUUIDSample/TAKUUIDSample-Info.plist";
@@ -458,7 +461,6 @@
 			baseConfigurationReference = 68C13EB75D5CE9372F0E2391 /* Pods-TAKUUIDSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKUUIDSample/TAKUUIDSample-Prefix.pch";
 				INFOPLIST_FILE = "TAKUUIDSample/TAKUUIDSample-Info.plist";
