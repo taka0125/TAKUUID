@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TAKUUID'
-  s.version      = '1.1.0'
+  s.version      = '1.2.0'
   s.license      = 'MIT'
   s.summary      = 'create UUID and store to Keychain library'
   s.homepage     = 'https://github.com/taka0125/TAKUUID'
