@@ -1,2 +1,5 @@
 platform :ios, '7.0'
-pod 'TAKUUID', :path => '../'
+
+target 'TAKUUIDSample' do
+  pod 'TAKUUID', :path => '../'
+end
