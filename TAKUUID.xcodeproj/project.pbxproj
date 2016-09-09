@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D3A27D993B50CDCDC3DD64C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AD6A12C6147515DB33BC15 /* libPods.a */; };
+		5861A2BAEE32132013952677 /* libPods-TAKUUID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F2DEF2190822161CA6754A /* libPods-TAKUUID.a */; };
+		5BD0ACD25DD308DFF2D0C062 /* libPods-TAKUUIDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 303A1BA9B36E2AB86AF0B7C7 /* libPods-TAKUUIDTests.a */; };
 		8638B5D11A0E54E10089F979 /* TAKUUIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638B5D01A0E54E10089F979 /* TAKUUIDTests.m */; };
 		866B539B1A0E51150038140A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866B539A1A0E51150038140A /* main.m */; };
 		866B539E1A0E51150038140A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866B539D1A0E51150038140A /* AppDelegate.m */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EC6B74940692B87ACF63C4E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		39AD6A12C6147515DB33BC15 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		144600B75D9C7773461A9D6B /* Pods-TAKUUIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDTests/Pods-TAKUUIDTests.release.xcconfig"; sourceTree = "<group>"; };
+		195E76156F3AEF2C238A59C9 /* Pods-TAKUUID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUID.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUID/Pods-TAKUUID.release.xcconfig"; sourceTree = "<group>"; };
+		303A1BA9B36E2AB86AF0B7C7 /* libPods-TAKUUIDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUIDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638B5CC1A0E54E10089F979 /* TAKUUIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAKUUIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8638B5CF1A0E54E10089F979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8638B5D01A0E54E10089F979 /* TAKUUIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAKUUIDTests.m; sourceTree = "<group>"; };
@@ -43,7 +45,9 @@
 		866B53A31A0E51150038140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		866B53A51A0E51150038140A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		866B53A81A0E51150038140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F488581277638C8B37DE5F92 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DD9BBD19EDDCFC37D55631E1 /* Pods-TAKUUID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUID/Pods-TAKUUID.debug.xcconfig"; sourceTree = "<group>"; };
+		F4561C26A757716BEA43F86C /* Pods-TAKUUIDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDTests/Pods-TAKUUIDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F2DEF2190822161CA6754A /* libPods-TAKUUID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD0ACD25DD308DFF2D0C062 /* libPods-TAKUUIDTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,21 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3A27D993B50CDCDC3DD64C /* libPods.a in Frameworks */,
+				5861A2BAEE32132013952677 /* libPods-TAKUUID.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1162022C7F8BD4E4807C04F0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				39AD6A12C6147515DB33BC15 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8638B5CD1A0E54E10089F979 /* TAKUUIDTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +93,8 @@
 				866B53971A0E51150038140A /* TAKUUID */,
 				8638B5CD1A0E54E10089F979 /* TAKUUIDTests */,
 				866B53961A0E51150038140A /* Products */,
-				F2EE07C50FA8CD02302C675C /* Pods */,
-				1162022C7F8BD4E4807C04F0 /* Frameworks */,
+				A3B6CE4359B28EC016EB64FC /* Pods */,
+				8CF10D9D6AD079500AD209EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,11 +131,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F2EE07C50FA8CD02302C675C /* Pods */ = {
+		8CF10D9D6AD079500AD209EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EC6B74940692B87ACF63C4E /* Pods.debug.xcconfig */,
-				F488581277638C8B37DE5F92 /* Pods.release.xcconfig */,
+				F5F2DEF2190822161CA6754A /* libPods-TAKUUID.a */,
+				303A1BA9B36E2AB86AF0B7C7 /* libPods-TAKUUIDTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3B6CE4359B28EC016EB64FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD9BBD19EDDCFC37D55631E1 /* Pods-TAKUUID.debug.xcconfig */,
+				195E76156F3AEF2C238A59C9 /* Pods-TAKUUID.release.xcconfig */,
+				F4561C26A757716BEA43F86C /* Pods-TAKUUIDTests.debug.xcconfig */,
+				144600B75D9C7773461A9D6B /* Pods-TAKUUIDTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -150,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8638B5D41A0E54E10089F979 /* Build configuration list for PBXNativeTarget "TAKUUIDTests" */;
 			buildPhases = (
+				D9B1F32AC8FD50B0B1EC89B8 /* [CP] Check Pods Manifest.lock */,
 				8638B5C81A0E54E10089F979 /* Sources */,
 				8638B5C91A0E54E10089F979 /* Frameworks */,
 				8638B5CA1A0E54E10089F979 /* Resources */,
+				7FFB779486454DF3127B1871 /* [CP] Embed Pods Frameworks */,
+				044D311F7DCC07060BDC5E3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,11 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 866B53B81A0E51150038140A /* Build configuration list for PBXNativeTarget "TAKUUID" */;
 			buildPhases = (
-				B4F045BAE34E9479CFD789E3 /* Check Pods Manifest.lock */,
+				23B9881108C6F22DB2B42880 /* [CP] Check Pods Manifest.lock */,
 				866B53911A0E51150038140A /* Sources */,
 				866B53921A0E51150038140A /* Frameworks */,
 				866B53931A0E51150038140A /* Resources */,
-				54239647F5135344A2FD7563 /* Copy Pods Resources */,
+				6C53EA8107B89CEE16ED2920 /* [CP] Embed Pods Frameworks */,
+				1B7D96986715664C3D136274 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,7 +201,7 @@
 		866B538D1A0E51150038140A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Takahiro Ooishi";
 				TargetAttributes = {
 					8638B5CB1A0E54E10089F979 = {
@@ -241,29 +253,89 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54239647F5135344A2FD7563 /* Copy Pods Resources */ = {
+		044D311F7DCC07060BDC5E3D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUIDTests/Pods-TAKUUIDTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4F045BAE34E9479CFD789E3 /* Check Pods Manifest.lock */ = {
+		1B7D96986715664C3D136274 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUID/Pods-TAKUUID-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23B9881108C6F22DB2B42880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C53EA8107B89CEE16ED2920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUID/Pods-TAKUUID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFB779486454DF3127B1871 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUIDTests/Pods-TAKUUIDTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B1F32AC8FD50B0B1EC89B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +396,7 @@
 /* Begin XCBuildConfiguration section */
 		8638B5D51A0E54E10089F979 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EC6B74940692B87ACF63C4E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F4561C26A757716BEA43F86C /* Pods-TAKUUIDTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -337,6 +409,7 @@
 				);
 				INFOPLIST_FILE = TAKUUIDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.heartofsword.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAKUUID.app/TAKUUID";
 			};
@@ -344,6 +417,7 @@
 		};
 		8638B5D61A0E54E10089F979 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 144600B75D9C7773461A9D6B /* Pods-TAKUUIDTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -352,6 +426,7 @@
 				);
 				INFOPLIST_FILE = TAKUUIDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.heartofsword.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAKUUID.app/TAKUUID";
 			};
@@ -377,6 +452,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -391,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -426,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -435,12 +511,13 @@
 		};
 		866B53B91A0E51150038140A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EC6B74940692B87ACF63C4E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = DD9BBD19EDDCFC37D55631E1 /* Pods-TAKUUID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAKUUID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.heartofsword.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,12 +525,13 @@
 		};
 		866B53BA1A0E51150038140A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F488581277638C8B37DE5F92 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 195E76156F3AEF2C238A59C9 /* Pods-TAKUUID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TAKUUID/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.heartofsword.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,6 +547,7 @@
 				8638B5D61A0E54E10089F979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		866B53901A0E51150038140A /* Build configuration list for PBXProject "TAKUUID" */ = {
 			isa = XCConfigurationList;
