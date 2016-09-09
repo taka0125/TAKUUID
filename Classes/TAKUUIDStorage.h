@@ -14,7 +14,7 @@
 
 @property (nonatomic, readonly) OSStatus lastErrorStatus;
 
-+ (instancetype)sharedInstance;
++ (nonnull instancetype)sharedInstance;
 - (nullable NSString *)findOrCreate;
 - (BOOL)remove;
 - (nullable NSString *)renew;

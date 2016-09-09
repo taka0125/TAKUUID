@@ -19,7 +19,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
 
 @implementation TAKUUIDStorage
 
-+ (instancetype)sharedInstance {
++ (nonnull instancetype)sharedInstance {
   static TAKUUIDStorage *_instance = nil;
   static dispatch_once_t oncePredicate;
   dispatch_once(&oncePredicate, ^{

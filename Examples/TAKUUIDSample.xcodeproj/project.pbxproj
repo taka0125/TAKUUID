@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A0D5665394949EF7220966 /* libPods-TAKUUIDSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9A4874B76923CC789F5AE0 /* libPods-TAKUUIDSample.a */; };
 		86FA34E8192CDCFF0076278B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA34E7192CDCFF0076278B /* Foundation.framework */; };
 		86FA34EA192CDCFF0076278B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA34E9192CDCFF0076278B /* CoreGraphics.framework */; };
 		86FA34EC192CDCFF0076278B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA34EB192CDCFF0076278B /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		86FA3509192CDCFF0076278B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FA34EB192CDCFF0076278B /* UIKit.framework */; };
 		86FA3511192CDCFF0076278B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86FA350F192CDCFF0076278B /* InfoPlist.strings */; };
 		86FA3513192CDCFF0076278B /* TAKUUIDSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FA3512192CDCFF0076278B /* TAKUUIDSampleTests.m */; };
-		942B7E8DF7E87F5044A558DB /* libPods-TAKUUIDSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9914B383330A96894668CB53 /* libPods-TAKUUIDSample.a */; };
 		F8BFAB811D813BB200EC6624 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BFAB801D813BB200EC6624 /* Launch Screen.storyboard */; };
 		F8BFAB881D813C4F00EC6624 /* TAKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BFAB871D813C4F00EC6624 /* TAKViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		68C13EB75D5CE9372F0E2391 /* Pods-TAKUUIDSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample.release.xcconfig"; sourceTree = "<group>"; };
-		6BDA8C5915ED367786A5E6E5 /* Pods-TAKUUIDSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample.debug.xcconfig"; sourceTree = "<group>"; };
+		10B1A8F68DE7F8F60786FBEB /* Pods-TAKUUIDSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample.release.xcconfig"; sourceTree = "<group>"; };
+		7F9A4874B76923CC789F5AE0 /* libPods-TAKUUIDSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUIDSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FA34E4192CDCFF0076278B /* TAKUUIDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAKUUIDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FA34E7192CDCFF0076278B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86FA34E9192CDCFF0076278B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,10 +55,10 @@
 		86FA350E192CDCFF0076278B /* TAKUUIDSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAKUUIDSampleTests-Info.plist"; sourceTree = "<group>"; };
 		86FA3510192CDCFF0076278B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86FA3512192CDCFF0076278B /* TAKUUIDSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAKUUIDSampleTests.m; sourceTree = "<group>"; };
-		9914B383330A96894668CB53 /* libPods-TAKUUIDSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUIDSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BFAB801D813BB200EC6624 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F8BFAB861D813C4F00EC6624 /* TAKUUIDSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAKUUIDSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8BFAB871D813C4F00EC6624 /* TAKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAKViewController.swift; sourceTree = "<group>"; };
+		FE7CF8345FA6D44E373429C1 /* Pods-TAKUUIDSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				86FA34EA192CDCFF0076278B /* CoreGraphics.framework in Frameworks */,
 				86FA34EC192CDCFF0076278B /* UIKit.framework in Frameworks */,
 				86FA34E8192CDCFF0076278B /* Foundation.framework in Frameworks */,
-				942B7E8DF7E87F5044A558DB /* libPods-TAKUUIDSample.a in Frameworks */,
+				26A0D5665394949EF7220966 /* libPods-TAKUUIDSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		766C3C239F1A3481F33AB0DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE7CF8345FA6D44E373429C1 /* Pods-TAKUUIDSample.debug.xcconfig */,
+				10B1A8F68DE7F8F60786FBEB /* Pods-TAKUUIDSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		86FA34DB192CDCFF0076278B = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +102,7 @@
 				86FA350C192CDCFF0076278B /* TAKUUIDSampleTests */,
 				86FA34E6192CDCFF0076278B /* Frameworks */,
 				86FA34E5192CDCFF0076278B /* Products */,
-				8BB5E4058DF3FAFD94581375 /* Pods */,
+				766C3C239F1A3481F33AB0DC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +122,7 @@
 				86FA34E9192CDCFF0076278B /* CoreGraphics.framework */,
 				86FA34EB192CDCFF0076278B /* UIKit.framework */,
 				86FA3506192CDCFF0076278B /* XCTest.framework */,
-				9914B383330A96894668CB53 /* libPods-TAKUUIDSample.a */,
+				7F9A4874B76923CC789F5AE0 /* libPods-TAKUUIDSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,15 +171,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8BB5E4058DF3FAFD94581375 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6BDA8C5915ED367786A5E6E5 /* Pods-TAKUUIDSample.debug.xcconfig */,
-				68C13EB75D5CE9372F0E2391 /* Pods-TAKUUIDSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,12 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86FA3516192CDCFF0076278B /* Build configuration list for PBXNativeTarget "TAKUUIDSample" */;
 			buildPhases = (
-				ABD5B0CAEA4A38BF7A356904 /* [CP] Check Pods Manifest.lock */,
+				F7E50F6070E94F2BCB4A963F /* [CP] Check Pods Manifest.lock */,
 				86FA34E0192CDCFF0076278B /* Sources */,
 				86FA34E1192CDCFF0076278B /* Frameworks */,
 				86FA34E2192CDCFF0076278B /* Resources */,
-				3E0361AC81968C7CD2E18E51 /* [CP] Embed Pods Frameworks */,
-				32580748E26CF1F1325B90F7 /* [CP] Copy Pods Resources */,
+				9974D89C0D0311CA0D9A723F /* [CP] Embed Pods Frameworks */,
+				6D3EBF010BF071BDCBA13A5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +219,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TAK;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Takahiro Ooishi";
 				TargetAttributes = {
@@ -272,7 +273,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32580748E26CF1F1325B90F7 /* [CP] Copy Pods Resources */ = {
+		6D3EBF010BF071BDCBA13A5C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,7 +288,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E0361AC81968C7CD2E18E51 /* [CP] Embed Pods Frameworks */ = {
+		9974D89C0D0311CA0D9A723F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,7 +303,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TAKUUIDSample/Pods-TAKUUIDSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABD5B0CAEA4A38BF7A356904 /* [CP] Check Pods Manifest.lock */ = {
+		F7E50F6070E94F2BCB4A963F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -440,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -448,13 +449,14 @@
 		};
 		86FA3517192CDCFF0076278B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BDA8C5915ED367786A5E6E5 /* Pods-TAKUUIDSample.debug.xcconfig */;
+			baseConfigurationReference = FE7CF8345FA6D44E373429C1 /* Pods-TAKUUIDSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKUUIDSample/TAKUUIDSample-Prefix.pch";
 				INFOPLIST_FILE = "TAKUUIDSample/TAKUUIDSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAKUUIDSample/TAKUUIDSample-Bridging-Header.h";
@@ -466,13 +468,14 @@
 		};
 		86FA3518192CDCFF0076278B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68C13EB75D5CE9372F0E2391 /* Pods-TAKUUIDSample.release.xcconfig */;
+			baseConfigurationReference = 10B1A8F68DE7F8F60786FBEB /* Pods-TAKUUIDSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAKUUIDSample/TAKUUIDSample-Prefix.pch";
 				INFOPLIST_FILE = "TAKUUIDSample/TAKUUIDSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TAKUUIDSample/TAKUUIDSample-Bridging-Header.h";
