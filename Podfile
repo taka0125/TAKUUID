@@ -2,6 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '8.0'
 
-link_with %w(TAKUUID)
+target 'TAKUUID' do
+  pod 'TAKUUID', :path => './'
+end
 
-pod 'TAKUUID', :path => './'
+target 'TAKUUIDTests' do
+  pod 'TAKUUID', :path => './'
+end

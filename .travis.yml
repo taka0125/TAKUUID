@@ -1,18 +1,24 @@
 language: objective-c
+osx_image: xcode7.3
 cache: 
   directories:
     - vendor/bundle
     - Pods
+before_install:
+  - gem install bundler
 install:
-  - bundle install --path=vendor/bundle --binstubs=vendor/bin
+  - brew update && (brew upgrade xctool || true) && xctool --version
+  - bundle install -j4 --path=vendor/bundle --binstubs=vendor/bin
   - bundle exec pod install
-before_script:
-  - brew update && brew upgrade xctool && xctool --version
 xcode_workspace:  TAKUUID.xcworkspace
 xcode_scheme: TAKUUID
 xcode_sdk: iphonesimulator
 env:
-  - XCODE_SDK=iphonesimulator7.0
-  - XCODE_SDK=iphonesimulator7.1
-  - XCODE_SDK=iphonesimulator8.0
   - XCODE_SDK=iphonesimulator8.1
+  - XCODE_SDK=iphonesimulator8.2
+  - XCODE_SDK=iphonesimulator8.3
+  - XCODE_SDK=iphonesimulator8.4
+  - XCODE_SDK=iphonesimulator9.0
+  - XCODE_SDK=iphonesimulator9.1
+  - XCODE_SDK=iphonesimulator9.2
+  - XCODE_SDK=iphonesimulator9.3
