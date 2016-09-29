@@ -8,6 +8,12 @@
 import UIKit
 
 final class TAKViewController: UIViewController {
+  override func viewDidLoad() {
+    guard let accessGroup = Bundle.main.object(forInfoDictionaryKey: "KeychainAccessGroup") as? String else { return }
+    TAKUUIDStorage.sharedInstance().accessGroup = accessGroup
+    TAKUUIDStorage.sharedInstance().migrate()
+  }
+  
   @IBAction func remove() {
     let result = TAKUUIDStorage.sharedInstance().remove()
     print("remove = \(result)")
@@ -24,16 +30,5 @@ final class TAKViewController: UIViewController {
     let uuid = TAKUUIDStorage.sharedInstance().renew()
     print("uuid = \(uuid)")
     print("lastErrorStatus = \(TAKUUIDStorage.sharedInstance().lastErrorStatus)")
-  }
-  
-  @IBAction func updateAttrAccessible() {
-    var uuid = TAKUUIDStorage.sharedInstance().findOrCreate()
-    print("uuid = \(uuid)")
-    print("lastErrorStatus = \(TAKUUIDStorage.sharedInstance().lastErrorStatus)")
-  
-    TAKUUIDStorage.sharedInstance().updateAttrAccessible()
-    
-    uuid = TAKUUIDStorage.sharedInstance().findOrCreate()
-    print("uuid = \(uuid)")
   }
 }
