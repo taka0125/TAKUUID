@@ -19,6 +19,6 @@
 - (nullable NSString *)findOrCreate;
 - (BOOL)remove;
 - (nullable NSString *)renew;
-- (BOOL)updateAttrAccessible;
+- (BOOL)migrate;
 
 @end
