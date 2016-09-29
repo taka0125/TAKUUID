@@ -43,7 +43,7 @@ Then call `findOrCreate`.
 - Swift
 
 ```swift
-TAKUUIDStorage.sharedInstance.accessGroup = "12ABCD3E4F.shared"
+TAKUUIDStorage.sharedInstance().accessGroup = "12ABCD3E4F.shared"
 ```
 
 ### migrate
@@ -59,7 +59,7 @@ after set keychain access group, call `migrate` method.
 - Swift
 
 ```
-TAKUUIDStorage.sharedInstance.migrate()
+TAKUUIDStorage.sharedInstance().migrate()
 ```
 
 ## findOrCreate
