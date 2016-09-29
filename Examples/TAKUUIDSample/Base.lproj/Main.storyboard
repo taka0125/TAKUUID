@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -42,24 +42,14 @@
                                     <action selector="renew" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ECe-ID-TaS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ4-RF-ecy">
-                                <state key="normal" title="updateAttrAccessible">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="updateAttrAccessible" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p24-ge-bkt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EJ4-RF-ecy" firstAttribute="top" secondItem="QUH-MW-Plf" secondAttribute="bottom" constant="44" id="43V-qY-SDg"/>
                             <constraint firstItem="iP0-kN-AvB" firstAttribute="top" secondItem="aLw-Qy-Xkv" secondAttribute="bottom" constant="44" id="Jko-mE-whq"/>
                             <constraint firstItem="aLw-Qy-Xkv" firstAttribute="centerX" secondItem="QUH-MW-Plf" secondAttribute="centerX" id="LbB-8h-AdA"/>
                             <constraint firstItem="QUH-MW-Plf" firstAttribute="top" secondItem="iP0-kN-AvB" secondAttribute="bottom" constant="44" id="NSM-xJ-wuZ"/>
                             <constraint firstAttribute="centerY" secondItem="iP0-kN-AvB" secondAttribute="centerY" id="OKP-ci-2CU"/>
                             <constraint firstAttribute="centerX" secondItem="iP0-kN-AvB" secondAttribute="centerX" id="Rwy-V5-nXu"/>
-                            <constraint firstItem="EJ4-RF-ecy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cBd-Ko-Gjq"/>
                             <constraint firstItem="aLw-Qy-Xkv" firstAttribute="centerX" secondItem="iP0-kN-AvB" secondAttribute="centerX" id="lnF-bv-eFg"/>
                         </constraints>
                     </view>
