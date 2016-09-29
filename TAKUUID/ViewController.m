@@ -11,6 +11,11 @@
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+  NSString *accessGroup = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"KeychainAccessGroup"];
+  [TAKUUIDStorage sharedInstance].accessGroup = accessGroup;
+}
+
 - (IBAction)remove {
   BOOL result = [[TAKUUIDStorage sharedInstance] remove];
   NSLog(@"remove => %d", result);

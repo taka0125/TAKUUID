@@ -13,6 +13,7 @@
 @interface TAKUUIDStorage : NSObject
 
 @property (nonatomic, readonly) OSStatus lastErrorStatus;
+@property (nonatomic, copy, nullable) NSString *accessGroup;
 
 + (nonnull instancetype)sharedInstance;
 - (nullable NSString *)findOrCreate;

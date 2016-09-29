@@ -45,6 +45,7 @@
 		866B53A31A0E51150038140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		866B53A51A0E51150038140A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		866B53A81A0E51150038140A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		868FF6D61D9D2FE30067D4A7 /* TAKUUID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TAKUUID.entitlements; sourceTree = "<group>"; };
 		DD9BBD19EDDCFC37D55631E1 /* Pods-TAKUUID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUID/Pods-TAKUUID.debug.xcconfig"; sourceTree = "<group>"; };
 		F4561C26A757716BEA43F86C /* Pods-TAKUUIDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAKUUIDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAKUUIDTests/Pods-TAKUUIDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F2DEF2190822161CA6754A /* libPods-TAKUUID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAKUUID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +111,7 @@
 		866B53971A0E51150038140A /* TAKUUID */ = {
 			isa = PBXGroup;
 			children = (
+				868FF6D61D9D2FE30067D4A7 /* TAKUUID.entitlements */,
 				866B539C1A0E51150038140A /* AppDelegate.h */,
 				866B539D1A0E51150038140A /* AppDelegate.m */,
 				866B539F1A0E51150038140A /* ViewController.h */,
@@ -210,6 +212,12 @@
 					};
 					866B53941A0E51150038140A = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = W7992S87DQ;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -295,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6C53EA8107B89CEE16ED2920 /* [CP] Embed Pods Frameworks */ = {
@@ -340,7 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -514,6 +522,8 @@
 			baseConfigurationReference = DD9BBD19EDDCFC37D55631E1 /* Pods-TAKUUID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TAKUUID/TAKUUID.entitlements;
+				DEVELOPMENT_TEAM = W7992S87DQ;
 				INFOPLIST_FILE = TAKUUID/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +538,8 @@
 			baseConfigurationReference = 195E76156F3AEF2C238A59C9 /* Pods-TAKUUID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TAKUUID/TAKUUID.entitlements;
+				DEVELOPMENT_TEAM = W7992S87DQ;
 				INFOPLIST_FILE = TAKUUID/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
