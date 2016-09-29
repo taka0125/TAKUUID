@@ -48,7 +48,7 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
   return nil;
 }
 
-- (BOOL)updateAttrAccessible {
+- (BOOL)migrate {
   self.lastErrorStatus = noErr;
 
   NSString *UUIDString = [self find];
@@ -73,15 +73,21 @@ static NSString * const Account = @"TAKUUIDStorage/Account";
 }
 
 - (NSDictionary *)queryForCreate:(NSString *)UUIDString {
-  return @{
-           (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
-           (__bridge id)kSecAttrAccount: Account,
-           (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleAfterFirstUnlock,
-           (__bridge id)kSecValueData: [UUIDString dataUsingEncoding:NSUTF8StringEncoding],
-           (__bridge id)kSecAttrDescription: @"",
-           (__bridge id)kSecAttrService: [NSBundle mainBundle].bundleIdentifier,
-           (__bridge id)kSecAttrComment: @""
-           };
+  NSMutableDictionary *items = @{
+    (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
+    (__bridge id)kSecAttrAccount: Account,
+    (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleAfterFirstUnlock,
+    (__bridge id)kSecValueData: [UUIDString dataUsingEncoding:NSUTF8StringEncoding],
+    (__bridge id)kSecAttrDescription: @"",
+    (__bridge id)kSecAttrService: [NSBundle mainBundle].bundleIdentifier,
+    (__bridge id)kSecAttrComment: @""
+  }.mutableCopy;
+
+  if (self.accessGroup != nil && self.accessGroup.length > 0) {
+    items[(__bridge id)kSecAttrAccessGroup] = self.accessGroup;
+  }
+
+  return [NSDictionary dictionaryWithDictionary: items];
 }
 
 - (NSDictionary *)queryForRemove {
