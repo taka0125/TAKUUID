@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDA792EC1EF0EE97008320F4 /* TAKUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA792E91EF0EE97008320F4 /* TAKUUID.h */; };
-		EDA792ED1EF0EE97008320F4 /* TAKUUIDStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA792EA1EF0EE97008320F4 /* TAKUUIDStorage.h */; };
-		EDA792EE1EF0EE97008320F4 /* TAKUUIDStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA792EB1EF0EE97008320F4 /* TAKUUIDStorage.m */; };
+		EDEE14BE1EF102F600C61D70 /* TAKUUIDStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEE14BC1EF102F600C61D70 /* TAKUUIDStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDEE14BF1EF102F600C61D70 /* TAKUUIDStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE14BD1EF102F600C61D70 /* TAKUUIDStorage.m */; };
+		EDEE14C61EF1035300C61D70 /* TAKUUID.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEE14C51EF1035300C61D70 /* TAKUUID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EDA792DE1EF0EE8A008320F4 /* TAKUUID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAKUUID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDA792E21EF0EE8A008320F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDA792E91EF0EE97008320F4 /* TAKUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAKUUID.h; path = ../../../Classes/TAKUUID.h; sourceTree = "<group>"; };
-		EDA792EA1EF0EE97008320F4 /* TAKUUIDStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAKUUIDStorage.h; path = ../../../Classes/TAKUUIDStorage.h; sourceTree = "<group>"; };
-		EDA792EB1EF0EE97008320F4 /* TAKUUIDStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAKUUIDStorage.m; path = ../../../Classes/TAKUUIDStorage.m; sourceTree = "<group>"; };
+		ED51B6301EF100700036BDFE /* TAKUUID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAKUUID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED51B6341EF100700036BDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDEE14BC1EF102F600C61D70 /* TAKUUIDStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAKUUIDStorage.h; path = ../../../Classes/TAKUUIDStorage.h; sourceTree = "<group>"; };
+		EDEE14BD1EF102F600C61D70 /* TAKUUIDStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAKUUIDStorage.m; path = ../../../Classes/TAKUUIDStorage.m; sourceTree = "<group>"; };
+		EDEE14C51EF1035300C61D70 /* TAKUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAKUUID.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EDA792DA1EF0EE8A008320F4 /* Frameworks */ = {
+		ED51B62C1EF100700036BDFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,29 +31,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDA792D41EF0EE8A008320F4 = {
+		ED51B6261EF100700036BDFE = {
 			isa = PBXGroup;
 			children = (
-				EDA792E01EF0EE8A008320F4 /* TAKUUID */,
-				EDA792DF1EF0EE8A008320F4 /* Products */,
+				ED51B6321EF100700036BDFE /* TAKUUID */,
+				ED51B6311EF100700036BDFE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EDA792DF1EF0EE8A008320F4 /* Products */ = {
+		ED51B6311EF100700036BDFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDA792DE1EF0EE8A008320F4 /* TAKUUID.framework */,
+				ED51B6301EF100700036BDFE /* TAKUUID.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDA792E01EF0EE8A008320F4 /* TAKUUID */ = {
+		ED51B6321EF100700036BDFE /* TAKUUID */ = {
 			isa = PBXGroup;
 			children = (
-				EDA792E91EF0EE97008320F4 /* TAKUUID.h */,
-				EDA792EA1EF0EE97008320F4 /* TAKUUIDStorage.h */,
-				EDA792EB1EF0EE97008320F4 /* TAKUUIDStorage.m */,
-				EDA792E21EF0EE8A008320F4 /* Info.plist */,
+				EDEE14C51EF1035300C61D70 /* TAKUUID.h */,
+				EDEE14BC1EF102F600C61D70 /* TAKUUIDStorage.h */,
+				EDEE14BD1EF102F600C61D70 /* TAKUUIDStorage.m */,
+				ED51B6341EF100700036BDFE /* Info.plist */,
 			);
 			path = TAKUUID;
 			sourceTree = "<group>";
@@ -61,26 +61,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EDA792DB1EF0EE8A008320F4 /* Headers */ = {
+		ED51B62D1EF100700036BDFE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA792EC1EF0EE97008320F4 /* TAKUUID.h in Headers */,
-				EDA792ED1EF0EE97008320F4 /* TAKUUIDStorage.h in Headers */,
+				EDEE14C61EF1035300C61D70 /* TAKUUID.h in Headers */,
+				EDEE14BE1EF102F600C61D70 /* TAKUUIDStorage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EDA792DD1EF0EE8A008320F4 /* TAKUUID */ = {
+		ED51B62F1EF100700036BDFE /* TAKUUID */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDA792E61EF0EE8A008320F4 /* Build configuration list for PBXNativeTarget "TAKUUID" */;
+			buildConfigurationList = ED51B6381EF100700036BDFE /* Build configuration list for PBXNativeTarget "TAKUUID" */;
 			buildPhases = (
-				EDA792D91EF0EE8A008320F4 /* Sources */,
-				EDA792DA1EF0EE8A008320F4 /* Frameworks */,
-				EDA792DB1EF0EE8A008320F4 /* Headers */,
-				EDA792DC1EF0EE8A008320F4 /* Resources */,
+				ED51B62B1EF100700036BDFE /* Sources */,
+				ED51B62C1EF100700036BDFE /* Frameworks */,
+				ED51B62D1EF100700036BDFE /* Headers */,
+				ED51B62E1EF100700036BDFE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -88,44 +88,44 @@
 			);
 			name = TAKUUID;
 			productName = TAKUUID;
-			productReference = EDA792DE1EF0EE8A008320F4 /* TAKUUID.framework */;
+			productReference = ED51B6301EF100700036BDFE /* TAKUUID.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EDA792D51EF0EE8A008320F4 /* Project object */ = {
+		ED51B6271EF100700036BDFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Koji Murata";
 				TargetAttributes = {
-					EDA792DD1EF0EE8A008320F4 = {
+					ED51B62F1EF100700036BDFE = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8AKT7PFJ2M;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EDA792D81EF0EE8A008320F4 /* Build configuration list for PBXProject "TAKUUID" */;
+			buildConfigurationList = ED51B62A1EF100700036BDFE /* Build configuration list for PBXProject "TAKUUID" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EDA792D41EF0EE8A008320F4;
-			productRefGroup = EDA792DF1EF0EE8A008320F4 /* Products */;
+			mainGroup = ED51B6261EF100700036BDFE;
+			productRefGroup = ED51B6311EF100700036BDFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDA792DD1EF0EE8A008320F4 /* TAKUUID */,
+				ED51B62F1EF100700036BDFE /* TAKUUID */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EDA792DC1EF0EE8A008320F4 /* Resources */ = {
+		ED51B62E1EF100700036BDFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,18 +135,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EDA792D91EF0EE8A008320F4 /* Sources */ = {
+		ED51B62B1EF100700036BDFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA792EE1EF0EE97008320F4 /* TAKUUIDStorage.m in Sources */,
+				EDEE14BF1EF102F600C61D70 /* TAKUUIDStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EDA792E41EF0EE8A008320F4 /* Debug */ = {
+		ED51B6361EF100700036BDFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -198,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		EDA792E51EF0EE8A008320F4 /* Release */ = {
+		ED51B6371EF100700036BDFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Release;
 		};
-		EDA792E71EF0EE8A008320F4 /* Debug */ = {
+		ED51B6391EF100700036BDFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -262,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		EDA792E81EF0EE8A008320F4 /* Release */ = {
+		ED51B63A1EF100700036BDFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -283,24 +283,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDA792D81EF0EE8A008320F4 /* Build configuration list for PBXProject "TAKUUID" */ = {
+		ED51B62A1EF100700036BDFE /* Build configuration list for PBXProject "TAKUUID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDA792E41EF0EE8A008320F4 /* Debug */,
-				EDA792E51EF0EE8A008320F4 /* Release */,
+				ED51B6361EF100700036BDFE /* Debug */,
+				ED51B6371EF100700036BDFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDA792E61EF0EE8A008320F4 /* Build configuration list for PBXNativeTarget "TAKUUID" */ = {
+		ED51B6381EF100700036BDFE /* Build configuration list for PBXNativeTarget "TAKUUID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDA792E71EF0EE8A008320F4 /* Debug */,
-				EDA792E81EF0EE8A008320F4 /* Release */,
+				ED51B6391EF100700036BDFE /* Debug */,
+				ED51B63A1EF100700036BDFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EDA792D51EF0EE8A008320F4 /* Project object */;
+	rootObject = ED51B6271EF100700036BDFE /* Project object */;
 }

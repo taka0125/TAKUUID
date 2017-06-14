@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDA792DD1EF0EE8A008320F4"
+               BlueprintIdentifier = "ED51B62F1EF100700036BDFE"
                BuildableName = "TAKUUID.framework"
                BlueprintName = "TAKUUID"
                ReferencedContainer = "container:TAKUUID.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDA792DD1EF0EE8A008320F4"
+            BlueprintIdentifier = "ED51B62F1EF100700036BDFE"
             BuildableName = "TAKUUID.framework"
             BlueprintName = "TAKUUID"
             ReferencedContainer = "container:TAKUUID.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDA792DD1EF0EE8A008320F4"
+            BlueprintIdentifier = "ED51B62F1EF100700036BDFE"
             BuildableName = "TAKUUID.framework"
             BlueprintName = "TAKUUID"
             ReferencedContainer = "container:TAKUUID.xcodeproj">
