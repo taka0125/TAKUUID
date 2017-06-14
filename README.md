@@ -21,6 +21,12 @@ or
 pod 'TAKUUID', :git => 'https://github.com/taka0125/TAKUUID.git'
 ```
 
+## Carthage
+
+```
+github "taka0125/TAKUUID"
+```
+
 ## Project Setting
 
 - "Keychain Sharing" on
