@@ -21,13 +21,13 @@ final class TAKViewController: UIViewController {
   }
   
   @IBAction func findOrCreate() {
-    let uuid = TAKUUIDStorage.sharedInstance().findOrCreate()
+    guard let uuid = TAKUUIDStorage.sharedInstance().findOrCreate() else { return }
     print("uuid = \(uuid)")
     print("lastErrorStatus = \(TAKUUIDStorage.sharedInstance().lastErrorStatus)")
   }
   
   @IBAction func renew() {
-    let uuid = TAKUUIDStorage.sharedInstance().renew()
+    guard let uuid = TAKUUIDStorage.sharedInstance().renew() else { return }
     print("uuid = \(uuid)")
     print("lastErrorStatus = \(TAKUUIDStorage.sharedInstance().lastErrorStatus)")
   }
